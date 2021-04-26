@@ -71,7 +71,7 @@ endif
 
 CPPFLAGS += -I$(HERE)include
 
-CROSS_COMPILE = riscv64-unknown-elf-
+CROSS_COMPILE = /Users/tf/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8-x86_64-apple-darwin/bin/riscv64-unknown-elf-
 CC      = $(CROSS_COMPILE)gcc $(if $(SPECS),-specs=$(SPECS).specs ,)-std=gnu11
 AS      = $(CROSS_COMPILE)gcc $(if $(SPECS),-specs=$(SPECS).specs ,)-x assembler-with-cpp
 OBJDUMP = $(CROSS_COMPILE)objdump
